@@ -44,3 +44,22 @@ kind: ServiceAccount
 metadata:
  name: some-deployment
 automountServiceAccountToken: false
+
+---
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+ name: superuser
+rules:
+- apiGroups:
+ - ""
+ resources: ["*"]
+ verbs:
+ - get
+ - list
+ - watch
+ - create
+ - update
+ - patch
+ - delete
