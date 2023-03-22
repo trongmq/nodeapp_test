@@ -39,11 +39,11 @@ spec:
 
 ---
 
-apiVersion: v1
-kind: ServiceAccount
-metadata:
- name: some-deployment
-automountServiceAccountToken: false
+#apiVersion: v1
+#kind: ServiceAccount
+#metadata:
+ #name: some-deployment
+#automountServiceAccountToken: false
 
 ---
 
